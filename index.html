@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neo Legal — Trusted Legal Solutions</title>
+  <meta name="description" content="Trusted legal solutions for businesses and individuals. Explore practice areas, meet the team, and book an appointment." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema markup for legal services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Neo Legal",
+    "url": "https://example.com",
+    "logo": "https://example.com/logo.png",
+    "areaServed": "Kenya",
+    "priceRange": "$$",
+    "telephone": "+254-700-000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1st Floor, Example Towers",
+      "addressLocality": "Nairobi",
+      "addressRegion": "Nairobi County",
+      "postalCode": "00100",
+      "addressCountry": "KE"
+    },
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "sameAs": [
+      "https://www.linkedin.com/company/example-legal"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation with sticky CTA -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Neo Legal Home">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28">
+          <circle cx="14" cy="14" r="13" fill="#0E2A47"></circle>
+          <text x="50%" y="55%" text-anchor="middle" fill="#F1C40F" font-size="14" font-family="Merriweather">N</text>
+        </svg>
+        <span class="brand-name">Neo Legal</span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <ul id="primary-menu" class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#practice-areas" class="nav-link">Practice Areas</a></li>
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="#news" class="nav-link">News Room</a></li>
+          <li><a href="#careers" class="nav-link">Careers</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn btn-accent book-cta" data-open-modal="appointment" aria-label="Book an appointment">
+        Book Appointment
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Home / Hero -->
+    <section id="home" class="section hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Trusted Legal Solutions for Businesses &amp; Individuals</h1>
+        <p class="hero-subtitle">Clear advice. Strategic action. Results that stand up.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#practice-areas">Explore Practice Areas</a>
+          <button class="btn btn-outline" data-open-modal="appointment">Book Appointment</button>
+        </div>
+
+        <div class="hero-trust">
+          <ul class="trust-list" aria-label="Client success highlights">
+            <li>
+              <strong>Corporate Advisory:</strong> Guided M&A worth KSh 1B with regulatory compliance.
+            </li>
+            <li>
+              <strong>Family Law:</strong> 92% mediated settlements avoiding court delays.
+            </li>
+            <li>
+              <strong>Real Estate:</strong> 500+ secure transactions reviewed in the last year.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container grid grid-2">
+        <div>
+          <h2 id="about-title">About Us</h2>
+          <p>
+            Neo Legal blends courtroom experience with meticulous advisory work. Our mission is to provide
+            precise, pragmatic counsel that protects your interests and drives effective outcomes.
+          </p>
+          <p>
+            Founded on integrity, diligence, and clarity, we believe legal guidance should be accessible,
+            accountable, and anchored in your goals.
+          </p>
+        </div>
+        <aside class="card">
+          <h3>Recognition</h3>
+          <ul class="list">
+            <li><strong>Awards:</strong> Regional Excellence in Corporate Law (2024)</li>
+            <li><strong>Certifications:</strong> LSK registered; Certified Mediators</li>
+            <li><strong>Memberships:</strong> East Africa Law Society, IAPP (Privacy)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Practice Areas -->
+    <section id="practice-areas" class="section" aria-labelledby="practice-title">
+      <div class="container">
+        <h2 id="practice-title">Practice Areas</h2>
+
+        <div class="grid grid-4 cards">
+          <!-- Corporate Law -->
+          <article class="card" aria-labelledby="pa-corporate-title">
+            <div class="card-icon" aria-hidden="true">🏛️</div>
+            <h3 id="pa-corporate-title">Corporate Law</h3>
+            <p>Company formation, governance, contracts, mergers & acquisitions, and regulatory compliance.</p>
+            <a href="#" class="card-link" aria-label="Learn more about Corporate Law">Learn More</a>
+          </article>
+
+          <!-- Family Law -->
+          <article class="card" aria-labelledby="pa-family-title">
+            <div class="card-icon" aria-hidden="true">👪</div>
+            <h3 id="pa-family-title">Family Law</h3>
+            <p>Divorce, custody, maintenance, mediation first, courtroom only when necessary.</p>
+            <a href="#" class="card-link" aria-label="Learn more about Family Law">Learn More</a>
+          </article>
+
+          <!-- Criminal Defense -->
+          <article class="card" aria-labelledby="pa-criminal-title">
+            <div class="card-icon" aria-hidden="true">⚖️</div>
+            <h3 id="pa-criminal-title">Criminal Defense</h3>
+            <p>Strategic defense, bail applications, rights protection from charge to verdict.</p>
+            <a href="#" class="card-link" aria-label="Learn more about Criminal Defense">Learn More</a>
+          </article>
+
+          <!-- Real Estate -->
+          <article class="card" aria-labelledby="pa-realestate-title">
+            <div class="card-icon" aria-hidden="true">🏠</div>
+            <h3 id="pa-realestate-title">Real Estate</h3>
+            <p>Land due diligence, conveyancing, lease agreements, development approvals.</p>
+            <a href="#" class="card-link" aria-label="Learn more about Real Estate Law">Learn More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section" aria-labelledby="team-title">
+      <div class="container">
+        <h2 id="team-title">Meet the Team</h2>
+        <div class="grid grid-3 cards">
+          <article class="card profile">
+            <img src="https://via.placeholder.com/360x360" alt="Headshot of Jane Mwangi, Managing Partner" />
+            <div class="profile-body">
+              <h3>Jane Mwangi</h3>
+              <p><strong>Expertise:</strong> M&A, governance, cross-border compliance</p>
+              <p><strong>Notable:</strong> Lead counsel on multi‑jurisdictional acquisition</p>
+              <a href="#" class="profile-link" aria-label="View Jane Mwangi on LinkedIn">LinkedIn</a>
+            </div>
+          </article>
+
+          <article class="card profile">
+            <img src="https://via.placeholder.com/360x360" alt="Headshot of David Otieno, Senior Counsel" />
+            <div class="profile-body">
+              <h3>David Otieno</h3>
+              <p><strong>Expertise:</strong> Criminal defense, constitutional litigation</p>
+              <p><strong>Notable:</strong> Rights landmark in appellate decision</p>
+              <a href="#" class="profile-link" aria-label="View David Otieno on LinkedIn">LinkedIn</a>
+            </div>
+          </article>
+
+          <article class="card profile">
+            <img src="https://via.placeholder.com/360x360" alt="Headshot of Aisha Noor, Associate" />
+            <div class="profile-body">
+              <h3>Aisha Noor</h3>
+              <p><strong>Expertise:</strong> Family law, mediation, ADR frameworks</p>
+              <p><strong>Notable:</strong> 100+ successful mediated settlements</p>
+              <a href="#" class="profile-link" aria-label="View Aisha Noor on LinkedIn">LinkedIn</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="grid grid-2 cards">
+                <blockquote class="card">
+                    <p>"Neo Legal guided our merger seamlessly. Professional, precise, and reliable."</p>
+                    <footer>— CEO, TechCorp Africa</footer>
+                </blockquote>
+                <blockquote class="card">
+                    <p>"Their family law team helped us reach a fair settlement without court battles."</p>
+                    <footer>— Client, Nairobi</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- News Room -->
+    <section id="news" class="section" aria-labelledby="news-title">
+      <div class="container">
+        <h2 id="news-title">News Room</h2>
+
+        <div class="filters" role="region" aria-label="Filter articles">
+          <label for="filter-topic" class="label">Filter by topic</label>
+          <select id="filter-topic" aria-controls="news-list">
+            <option value="all">All</option>
+            <option value="corporate">Corporate</option>
+            <option value="family">Family</option>
+            <option value="criminal">Criminal</option>
+            <option value="realestate">Real Estate</option>
+          </select>
+
+          <label for="filter-date" class="label">Filter by date</label>
+          <input type="month" id="filter-date" aria-controls="news-list" />
+        </div>
+
+        <div id="news-list" class="grid grid-3 cards">
+          <article class="card" data-topic="corporate" data-date="2025-12">
+            <h3>Regulatory updates for cross-border M&A</h3>
+            <p>Key considerations for Kenyan firms expanding in EAC.</p>
+            <a href="#" class="card-link">Read More</a>
+          </article>
+
+          <article class="card" data-topic="family" data-date="2025-11">
+            <h3>Mediation best practices for custody matters</h3>
+            <p>Reducing conflict while ensuring children’s welfare.</p>
+            <a href="#" class="card-link">Read More</a>
+          </article>
+
+          <article class="card" data-topic="criminal" data-date="2025-10">
+            <h3>Understanding bail rights and timelines</h3>
+            <p>A practical guide from charge to application.</p>
+            <a href="#" class="card-link">Read More</a>
+          </article>
+
+          <article class="card" data-topic="realestate" data-date="2025-12">
+            <h3>Land due diligence: avoid common pitfalls</h3>
+            <p>Checklist for safe conveyancing transactions.</p>
+            <a href="#" class="card-link">Read More</a>
+          </article>
+
+          <article class="card" data-topic="corporate" data-date="2025-09">
+            <h3>Board governance trends in 2025</h3>
+            <p>Accountability, risk, and ESG disclosures.</p>
+            <a href="#" class="card-link">Read More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" class="section" aria-labelledby="careers-title">
+      <div class="container">
+        <h2 id="careers-title">Careers</h2>
+
+        <div class="grid grid-2">
+          <div>
+            <h3>Current openings</h3>
+            <ul class="list jobs">
+              <li>
+                <strong>Associate – Corporate:</strong> 2–4 years PQE
+                <div class="meta">Apply by: 2026‑01‑31 • Nairobi</div>
+                <a href="#" class="btn btn-outline btn-sm">Apply</a>
+              </li>
+              <li>
+                <strong>Paralegal – Litigation:</strong> 1–3 years experience
+                <div class="meta">Apply by: 2026‑01‑20 • Nairobi</div>
+                <a href="#" class="btn btn-outline btn-sm">Apply</a>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="card">
+            <h3>Why work with us</h3>
+            <ul class="list">
+              <li><strong>Growth:</strong> Mentorship and clear progression</li>
+              <li><strong>Impact:</strong> Complex, high‑trust matters</li>
+              <li><strong>Balance:</strong> Wellness benefits and flexible time</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container grid grid-2">
+        <div>
+          <h2 id="contact-title">Contact Us</h2>
+          <ul class="list contact-list">
+            <li><strong>Phone:</strong> +254 700 000000</li>
+            <li><strong>Email:</strong> info@example.com</li>
+            <li><strong>Address:</strong> 1st Floor, Example Towers, Nairobi, 00100</li>
+            <li><strong>Hours:</strong> Mon–Fri, 08:00–17:00</li>
+          </ul>
+
+          <form id="contact-form" class="form" novalidate aria-describedby="contact-help">
+            <div id="contact-help" class="sr-only">All fields marked required must be filled.</div>
+            <div class="form-row">
+              <label for="cf-name">Full name *</label>
+              <input id="cf-name" name="name" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="cf-email">Email *</label>
+              <input id="cf-email" name="email" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="cf-message">Your message *</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-note" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside>
+          <div class="map">
+            <iframe title="Map to Neo Legal" aria-label="Map to Neo Legal"
+              src="https://maps.google.com/maps?q=Nairobi&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with sticky appointment CTA -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h3>Neo Legal</h3>
+          <p>Clear advice. Strategic action. Results that stand up.</p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <ul class="list">
+            <li><a href="#practice-areas">Practice Areas</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#news">News Room</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <ul class="list">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter/X</a></li>
+          </ul>
+        </div>
+      </div>
+      <button class="btn btn-accent book-cta" data-open-modal="appointment">Book Appointment</button>
+      <small>&copy; 2025 Neo Legal. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal" id="appointment-modal" role="dialog" aria-modal="true" aria-labelledby="appointment-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" aria-label="Close" data-close-modal>✕</button>
+      <h2 id="appointment-title">Book an appointment</h2>
+      <form id="appointment-form" class="form" novalidate>
+        <div class="form-row">
+          <label for="ap-name">Full name *</label>
+          <input id="ap-name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="ap-email">Email *</label>
+          <input id="ap-email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="ap-phone">Phone *</label>
+          <input id="ap-phone" name="phone" type="tel" required />
+        </div>
+        <div class="form-row">
+          <label for="ap-area">Practice area *</label>
+          <select id="ap-area" name="area" required>
+            <option value="">Select an area</option>
+            <option>Corporate Law</option>
+            <option>Family Law</option>
+            <option>Criminal Defense</option>
+            <option>Real Estate</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="ap-date">Preferred date *</label>
+          <input id="ap-date" name="date" type="date" required />
+        </div>
+        <div class="form-row">
+          <label for="ap-time">Preferred time *</label>
+          <input id="ap-time" name="time" type="time" required />
+        </div>
+        <div class="form-row">
+          <label for="ap-mode">Consultation mode</label>
+          <select id="ap-mode" name="mode">
+            <option>In‑person</option>
+            <option>Zoom</option>
+            <option>Microsoft Teams</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Request Booking</button>
+        <p class="form-note" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
