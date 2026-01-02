@@ -159,7 +159,7 @@ a:hover {
 /* testimonials */
 #testimonials { 
   background: var(--muted); 
-  padding: 60px 0; 
+  /* padding: 60px 0;  */
 } #testimonials blockquote { 
   font-style: italic; 
   border-left: 4px solid var(--accent); 
@@ -251,7 +251,13 @@ a:hover {
 }
 
 @media (max-width: 720px) {
-  .footer-cols { grid-template-columns: 1fr; }
+  .footer-cols { 
+    grid-template-columns: 1fr; 
+  }
+  
+  .grid-4{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Modal */
